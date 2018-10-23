@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <link rel="stylesheet" href="main.css">
   <title>Book List</title>
 </head>
 <body>
  <div class="container">
    <h1 class="add_book">Add book</h1>
-   <form class="book-form">
+   <form id="book-form">
      <div>
        <label for="title">Title</label>
        <input type="text" name="" id="title" class="u-full-width">
@@ -23,6 +24,7 @@
       <label for="isbn">ISBN#</label>
       <input type="text" name="" id="isbn" class="u-full-width">
     </div>
+    <input type="submit" value="Submit" class = "u-full-width">
    </form>
    <hr>
 
