@@ -16,12 +16,11 @@ UI.prototype.addBookToList = function(book) {
     //create element 
     const tr = document.createElement('tr');
     tr.className = 'somthing';
-    tr.innerHTML = `<tr>
+    tr.innerHTML = `
     <td>${book.title}</td>
     <td>${book.author}</td>
     <td>${book.isbn}</td>
     <td><a href="#" class="delete" >X</a></td>
-    </tr>
     `;
 
     list.appendChild(tr);
@@ -94,4 +93,4 @@ document.getElementById('book-list').addEventListener('click', (e)=>{
 
     //show message
     ui.showAlert('Book Remover!', 'success');
-})
+});
